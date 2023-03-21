@@ -4,28 +4,29 @@
 //
 
 export class BankAccount {
+  
   constructor() {
-    throw new Error("Remove this statement and implement this function");
+    let balance = 0; 
   }
 
   open() {
-    throw new Error("Remove this statement and implement this function");
+
   }
 
   close() {
-    throw new Error("Remove this statement and implement this function");
+    
   }
 
   deposit() {
-    throw new Error("Remove this statement and implement this function");
+    
   }
 
   withdraw() {
-    throw new Error("Remove this statement and implement this function");
+   
   }
 
   get balance() {
-    throw new Error("Remove this statement and implement this function");
+    return 0;
   }
 }
 
