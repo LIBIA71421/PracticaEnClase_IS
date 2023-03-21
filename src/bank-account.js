@@ -5,20 +5,20 @@
 
 export class BankAccount {
   
-  constructor() {
-    let balance = 0; 
+  constructor(money) {
+    this.money = money; 
   }
 
   open() {
-
+    this.money = 0;
   }
 
   close() {
     
   }
 
-  deposit() {
-    
+  deposit(num) {
+    this.money = num ;
   }
 
   withdraw() {
@@ -26,7 +26,7 @@ export class BankAccount {
   }
 
   get balance() {
-    return 0;
+    return this.money;
   }
 }
 
