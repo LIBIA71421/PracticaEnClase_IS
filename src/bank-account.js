@@ -28,8 +28,8 @@ export class BankAccount {
     this.money = this.money + num;
   }
 
-  withdraw() {
-   
+  withdraw(num) {
+    
   }
 
   get balance() {
