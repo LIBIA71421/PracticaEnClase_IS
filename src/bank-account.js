@@ -25,6 +25,7 @@ export class BankAccount {
     else
     {
       this.inicio = false;
+      this.money = 0;
     }
   }
 
