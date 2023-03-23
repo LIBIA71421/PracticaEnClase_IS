@@ -16,8 +16,16 @@ export class BankAccount {
   }
 
   close() {
-    throw new Error("Remove this statement and implement this function");
     this.inicio = false;
+
+    if(this.inicio == false)
+    {
+      throw this.error;
+    }
+    else
+    {
+      this.inicio = false;
+    }
   }
 
   deposit(num) {
