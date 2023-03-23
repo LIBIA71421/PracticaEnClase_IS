@@ -38,11 +38,17 @@ export class BankAccount {
   }
 
   withdraw(num) {
-    if(this.inicio == false)
-    {
+    if(this.inicio == false){
       throw this.error;
     }
-    this.money = this.money - num;
+    else{
+      if (num > this.money){
+        throw this.error;
+      }
+      else{
+        this.money = this.money - num;
+      }
+    }
   }
 
   get balance() {
