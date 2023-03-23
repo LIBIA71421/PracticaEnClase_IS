@@ -6,19 +6,26 @@
 export class BankAccount {
   
   constructor(money) {
-    this.money = money; 
+    this.money = 0; 
+    this.inicio = false;
+    this.Error = new ValueError();
   }
 
   open() {
-    this.money = 0;
+    this.inicio = true;
   }
 
   close() {
-    
+    throw new Error("Remove this statement and implement this function");
+    this.inicio = false;
   }
 
   deposit(num) {
-    this.money = num ;
+    if(this.inicio == false)
+    {
+      throw this.error;
+    }
+    this.money = this.money + num;
   }
 
   withdraw() {
@@ -26,6 +33,10 @@ export class BankAccount {
   }
 
   get balance() {
+    if(this.inicio == false)
+    {
+      throw this.error;
+    }
     return this.money;
   }
 }
